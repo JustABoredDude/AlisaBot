@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "discord-giveaway": "^1.1.4",
+    "discord-giveaways": "^4.4.3",
     "discord.js": "^12.5.3",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "ms": "^2.1.3"
   }
 }
