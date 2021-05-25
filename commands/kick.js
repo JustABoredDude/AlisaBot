@@ -40,7 +40,7 @@ module.exports= {
                         const embed = new Discord.MessageEmbed()
                         .setColor('#ff0000')
                         .setTitle('Missing Permissions')
-                        .addField('Needed perms:','kick members')
+                        .addField('Needed perms:','Kick Members')
                         message.channel.send(embed) 
                         return
                     }

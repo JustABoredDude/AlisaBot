@@ -18,6 +18,8 @@ Client.giveawaysManager = new GiveawaysManager(Client, {
     }
 });
 
+const db = require('quick.db')
+
 Client.commands = new Discord.Collection();
 
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
@@ -28,7 +30,7 @@ for(const file of commandFiles){
 }
 Client.on('ready', ()=>{
     console.log('Ready')
-    Client.user.setActivity('Angels is mine and mine alone no one can steal him from me', { type: "PLAYING"}).catch(console.error)
+    Client.user.setActivity('Angels is my creator and Flash is my artist || Watching some suspicious members', { type: "PLAYING"}).catch(console.error)
 })
 Client.on('message', async message => {
     if (message.author.bot) return;
